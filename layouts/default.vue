@@ -5,16 +5,7 @@
                 <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">Jair9und</NuxtLink>
             </div>
 
-            <nav class="font-mono">
-            <ul class="flex space-x-4">
-                <li>
-                    <NuxtLink to="/">Main</NuxtLink>
-                </li>
-                <li>
-                    <NuxtLink to="/about">about</NuxtLink>
-                </li>
-            </ul>
-        </nav>
+            <Menu />
         </header>
 
         <main class="p-2">
@@ -22,3 +13,26 @@
         </main>
     </div>
 </template>
+
+<script setup lang="ts">
+useHead({
+  titleTemplate: '%s - Jairgund',
+  link: [
+    {
+      rel: 'preconnect',
+      href: 'https://fonts.googleapis.com'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap',
+      crossorigin: ''
+    }
+  ]
+})
+</script>
+
+<style>
+body {
+    font-family: 'Roboto';
+}
+</style>
