@@ -1,7 +1,12 @@
 <template>
-    <div>
-        <nav>
-            <ul>
+    <div class="container mx-auto max-w-2xl">
+        <header class="flex justify-between items-center mt-5">
+            <div>
+                <NuxtLink to="/" class="text-xl font-semibold p-2 hover:bg-gray-200">Jair9und</NuxtLink>
+            </div>
+
+            <nav class="font-mono">
+            <ul class="flex space-x-4">
                 <li>
                     <NuxtLink to="/">Main</NuxtLink>
                 </li>
@@ -10,6 +15,10 @@
                 </li>
             </ul>
         </nav>
-        <slot />
+        </header>
+
+        <main class="p-2">
+            <slot />
+        </main>
     </div>
 </template>
