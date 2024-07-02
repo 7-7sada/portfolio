@@ -1,3 +1,3 @@
 <template>
-    <div>All blog post</div>
+    <div>All blog post list!</div>
 </template>
