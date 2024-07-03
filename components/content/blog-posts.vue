@@ -23,7 +23,7 @@ const {data} = await useAsyncData(
     'blog-list',
     () => queryContent('/blog')
         .where({_path:{$ne:'/blog'}})
-        .only(['_path','title','publishedAt'])
+        .only(['_path','title','publishedAt','displayYear','year'])
         .sort({publishedAt:-1})
         .find()
 )
